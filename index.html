@@ -3,10 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Nikole, frontend developera početnika iz Zagreba.">
   <title>Nikola | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hi, My name is Nikola</h1>
-  <p>I am a new Frontend Developer from Zagreb, but I want to learn much more. Not just about Frontend, the Backend too.</p>
+
+  <header class="header">
+    <a href="#uvod" class="logo">Nikola</a>
+    <nav>
+      <a href="#projekti">Projekti</a>
+      <a href="#vjestine">Vještine</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="uvod" class="hero">
+      <p class="hero-label">Frontend developer početnik</p>
+      <h1>Bok, ja sam Nikola</h1>
+      <p class="hero-text">
+        Iz Zagreba sam i učim frontend web development. Gradim responzivne
+        web stranice i React aplikacije, a trenutno tražim prvu priliku u IT-u.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projekti" class="btn btn-primary">Pogledaj projekt</a>
+        <a href="https://github.com/kukimeister" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <section id="projekti">
+      <h2>Projekti</h2>
+
+      <article class="card">
+        <h3>Marko Markić - Personalni trener</h3>
+        <p>
+          React web stranica za izmišljenog personalnog trenera. Trener se
+          prijavljuje i sam upravlja sadržajem: programom treninga, planom
+          prehrane i recenzijama (dodavanje, uređivanje, brisanje, pretraga
+          i filtriranje).
+        </p>
+        <ul class="tags">
+          <li>React</li>
+          <li>React Hooks</li>
+          <li>Firebase Auth</li>
+          <li>Firestore</li>
+          <li>JavaScript</li>
+        </ul>
+        <div class="card-links">
+          <a href="https://kukimeister.github.io/Fitness-WebPage/" target="_blank" rel="noopener">Live demo</a>
+          <a href="https://github.com/kukimeister/Fitness-WebPage" target="_blank" rel="noopener">Izvorni kod</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="vjestine">
+      <h2>Vještine</h2>
+      <ul class="tags tags-large">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Firebase</li>
+        <li>Git i GitHub</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Otvoren sam za prilike za juniore i početne pozicije.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:TVOJ-EMAIL@example.com">TVOJ-EMAIL@example.com</a></li>
+        <li><a href="https://github.com/kukimeister" target="_blank" rel="noopener">github.com/kukimeister</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Nikola</p>
+  </footer>
+
 </body>
 </html>
